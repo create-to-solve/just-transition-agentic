@@ -1,0 +1,31 @@
+required_columns:
+  lad_code:
+    any_of: ["ladcode23", "LAD Code", "lad_code"]
+  lad_name:
+    any_of: ["laname23", "LAD Name", "lad_name"]
+
+wide_years:
+  prefix: "population_"
+  allowed_year_range:
+    start: 2011
+    end: 2024
+
+column_rules:
+  numeric_columns:
+    - "population_2011"
+    - "population_2012"
+    - "population_2013"
+    - "population_2014"
+    - "population_2015"
+    - "population_2016"
+    - "population_2017"
+    - "population_2018"
+    - "population_2019"
+    - "population_2020"
+    - "population_2021"
+    - "population_2022"
+    - "population_2023"
+    - "population_2024"
+
+row_rules:
+  min_rows: 50000

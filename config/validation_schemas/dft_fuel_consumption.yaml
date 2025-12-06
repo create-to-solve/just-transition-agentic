@@ -1,0 +1,13 @@
+required_columns:
+  lad_code:
+    any_of: ["Local Authority Code", "lad_code", "LAD Code"]
+  lad_name:
+    any_of: ["Local Authority [Note 4]", "Local Authority", "lad_name"]
+
+column_rules:
+  numeric_columns:
+    - "Buses total"
+    - "Fuel consumption by all vehicles"
+
+row_rules:
+  min_rows: 300

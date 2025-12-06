@@ -1,0 +1,19 @@
+required_columns:
+  lad_code:
+    any_of: ["Local Authority Code", "lad_code", "LAD Code"]
+  lad_name:
+    any_of: ["Local Authority", "lad_name"]
+  year:
+    any_of: ["Calendar Year", "Year"]
+  emissions:
+    any_of:
+      - "Territorial emissions (kt CO2e)"
+      - "Emissions within scope of influence (kt CO2)"
+
+column_rules:
+  numeric_columns:
+    - "Territorial emissions (kt CO2e)"
+    - "Emissions within scope of influence (kt CO2)"
+
+row_rules:
+  min_rows: 100000

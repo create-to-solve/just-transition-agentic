@@ -1,0 +1,24 @@
+required_columns:
+  lad_code:
+    any_of:
+      - "Local Authority District code (2019)"
+      - "LAD19CD"
+      - "lad_code"
+  lad_name:
+    any_of:
+      - "Local Authority District name (2019)"
+      - "LAD19NM"
+      - "lad_name"
+  imd_rank:
+    any_of:
+      - "Index of Multiple Deprivation (IMD) Rank"
+      - "IMD Rank"
+
+column_rules:
+  numeric_columns:
+    - "Index of Multiple Deprivation (IMD) Rank"
+    - "Index of Multiple Deprivation (IMD) Decile"
+
+row_rules:
+  min_rows: 30000
+
