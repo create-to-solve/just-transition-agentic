@@ -1,18 +1,9 @@
-# Python
-__pycache__/
-*.pyc
-*.pyo
-
 # Data
 data/raw/*
 !data/raw/.gitkeep
 
-outputs/*
-!outputs/diagnostics/
-!outputs/diagnostics/.gitkeep
-
-# Environments
-.env
-.venv
-*.sqlite
-*.db
+# Allow official raw datasets (tracked via Git LFS)
+!data/raw/desnz_ghg_emissions.csv
+!data/raw/dft_fuel_consumption.xlsx
+!data/raw/ons_population.xlsx
+!data/raw/imd_2019.xlsx
