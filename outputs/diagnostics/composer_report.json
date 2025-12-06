@@ -1,6 +1,6 @@
 {
   "desnz": {
-    "missing_count": 527,
+    "missing_count": 486,
     "missing_examples": [
       [
         "E06000001",
@@ -85,7 +85,7 @@
     ]
   },
   "dft": {
-    "missing_count": 318,
+    "missing_count": 296,
     "missing_examples": [
       [
         "E06000001",
@@ -170,7 +170,7 @@
     ]
   },
   "ons": {
-    "missing_count": 2117,
+    "missing_count": 1966,
     "missing_examples": [
       [
         "E06000001",
