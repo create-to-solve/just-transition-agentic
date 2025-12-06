@@ -1,41 +1,24 @@
-# Just Transition Agentic
-## Agent-driven, schema-validated pipeline for UK local-authority transition intelligence
+# Just Transition Agentic Pipeline (JTAP)
+## Evidence for Place-Based Transition Decisions in England
 
-Version: v3 (2025)
+The Just Transition Agentic Pipeline (JTAP) is an automated, reproducible system that brings together multiple official datasets to help understand how local areas are positioned for the transition to a low-carbon economy. It provides consistent, comparable, machine-readable evidence at the level of local authorities in England.
 
-This repository implements the third-generation architecture of the Just Transition Intelligence System (JTIS).  
-It is designed as a clean, reproducible, agentic framework for analysing the structural conditions of UK local-authority transition readiness.
+### JTAP integrates four national datasets:
+  DESNZ — greenhouse gas emissions
+  DfT — local transport fuel consumption
+  ONS — population estimates
+  IMD 2019 — deprivation (aggregated from LSOA to LAD)
 
-### Core features
+These are cleaned, harmonised, merged, and scored to create a single LA-year table (2011–2023) covering 289 local authorities.
 
-- **Agent-driven ingestion:**  
-  Data loading governed by a dataset registry and validation schemas.
+### The system produces:
 
-- **Schema-validated datasets:**  
-  Each raw dataset has formal column expectations, year ranges, and numerical rules.
+  A canonical, joined dataset with emissions, transport energy use, population, and deprivation
+  A Just Transition Index (JTI) combining emissions, transport intensity, and structural conditions
+  A ranked snapshot for any given year (e.g., 2023), showing high- and low-scoring areas
+  Diagnostics that make the process transparent and reproducible
 
-- **Pluggable pipeline stages:**  
-  Clear separation for ingestion → harmonisation → indicators → composite scoring → profiles.
+This project is designed for councils, analysts, researchers, and organisations seeking a structured, open-data foundation for transition planning, risk assessment, and place-based policy design.
 
-- **Diagnostics first:**  
-  The `ScoutAgent` validates raw datasets before any processing.
-
-### Current status (v3 baseline)
-
-- Dataset registry established  
-- Validation schemas implemented  
-- ScoutAgent operational  
-- Repository structured for modular expansion  
-- No legacy code from v1/v2 retained  
-
-### Next development steps
-
-1. Implement ingestion modules for DESNZ, DfT, ONS, IMD.  
-2. Build harmonisation functions to compute LAD–year long tables.  
-3. Implement indicators (emissions, transport, population, deprivation).  
-4. Implement JTI composite scoring.  
-5. Add LAD profile generation.  
-6. Add agentic Composer/Interpreter modules for autonomous runs.  
-7. Integrate a lightweight dashboard (optional).
-
-This repo is intentionally minimal and clean for clarity, maintainability, and future automation.
+Current release: England-only, v1.0
+Next steps: expand structural indicators, add visualisation tools, and introduce multi-agent automation.
