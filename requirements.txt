@@ -1,5 +1,6 @@
 pandas
+numpy
 pyyaml
 openpyxl
-rich
-numpy
+python-dotenv
+
